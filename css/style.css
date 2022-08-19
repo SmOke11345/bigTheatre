@@ -195,11 +195,11 @@ ul li {
 
 .title-main h1 {
     font-size: 63px;
-    line-height: 2.4em;
 }
 
 .sub-title p {
     width: 538px;
+    margin-top: 20px;
 }
 
 .btn-poster {
@@ -255,7 +255,7 @@ ul li {
 
 /* ourProductions */ 
 
-.container.Productions {
+.container.hidden {
     max-width: 1770px;
 }
 
@@ -263,6 +263,7 @@ ul li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 100px 0 0 66px;
+    width: 100%;
 }
 
 .item {
@@ -291,7 +292,7 @@ ul li {
 .nomination {
     margin-top: 150px;
     background: url(../img/nominationsBg.svg) no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 
 .nomination .wrapper {
@@ -425,6 +426,9 @@ input[type="submit"]:hover {
     }
     /* ourProductions */
     .container.hidden {
+        overflow: hidden;
+    }
+    #hidden {
         overflow: hidden;
     }
     .wrapper-grid {
@@ -564,8 +568,25 @@ input[type="submit"]:hover {
     .topic p {
         font-size: 25px;
     }
+    .nomination {
+        margin-left: -33px;
+    }
     .nomination .wrapper {
-        padding: 126px 0px 55px 33px;
+        padding: 60px 0px 55px 33px;
+        flex-direction: column;
+    }
+    .yearWin {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stars {
+        width: 290px;
+        margin: auto;
+    }
+    .leftWrapper {
+        margin: 20px 0 0 0;
+        text-align: center;
     }
     /* theaterPartners */
     /* footer */
