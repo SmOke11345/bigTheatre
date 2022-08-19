@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+	font-family: 'Open Sans Condensed Bold';
+	src: url('../fonts/open_sans_condensed_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/open_sans_condensed_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/open_sans_condensed_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/open_sans_condensed_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/open_sans_condensed_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/open_sans_condensed_bold.svg#open_sans_condensed_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: url('../fonts/OpenSansCondensed-Light.woff2') format('woff2') 
+        url('../fonts/OpenSansCondensed-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div, p, span, form, input, button, a, ul, li {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333333;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Open Sans Condensed Bold';
+    font-size: 48px;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 21px;
+    line-height: 1.75em;
+}
+h2 {
+    font-family: 'Open Sans Condensed';
+    font-weight: 300;
+}
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFF;
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+
+#header {
+    padding-top: 50px;
+}
+
+.background-shell {
+    width: 100%;
+    background: url(../img/main-background.png) no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 825px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel h4 {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+.tel h4 {
+    border-bottom: 2px solid #D1A954;
+    transition: ease-in-out .5s;
+}
+.tel h4:hover {
+    border-bottom: 2px solid #a08140;
+}
+
+/* sideInf/sideBar */
+
+#sideInf {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.75);
+}
+
+.contacts {
+    padding: 275px 62px 86px 62px;
+    display: grid;
+    row-gap: 40px;
+}
+.contacts h4 {
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+}
+.contacts h4 a {
+    color: #C4C4C4;
+}
+
+.separator {
+    width: 3px;
+    height: 80px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+.link {
+    display: grid;
+    justify-items: center;
+    row-gap: 30px;
+}
+
+#sideBar,.sideBar  {
+    display: none;
+}
+#sideBar {
+    width: 40%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.sideBar {
+    cursor: pointer;
+}
+.linkBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px;
+    margin: 89px auto 0;
+    justify-items: center;
+    width: fit-content;
+    align-items: center;
+}
+.close {
+    padding: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapBar {
+    padding: 78px 35px 50px 39px;
+}
+.navigationBar h4 {
+    font-size: 24px;
+}
+.navigationBar li {
+    margin-bottom: 35px;
+}
+/* main */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.content-wrapper {
+    margin-top: 260px;
+}
+
+.title-main h1 {
+    font-size: 63px;
+    line-height: 2.4em;
+}
+
+.sub-title p {
+    width: 538px;
+}
+
+.btn-poster {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: #D1A954;
+    padding: 10px 47px;
+    margin-top: 50px;
+}
+
+.owl-carousel {
+    max-width: 370px;
+    width: 100%;
+    margin-top: 190px;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-bottom: 210px;
+}
+
+/* aboutTheatre */
+
+.title {
+    margin: 150px 0 100px 0;
+    text-align: center;
+}
+
+
+.gold-firstChild {
+    color: #D1A954;
+}
+
+.title-about h3 {
+    margin-bottom: 30px;
+}
+.about p { 
+    width: 445px;
+}
+
+.numders-about {
+    margin-top: 5px;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.theatreNumber {
+    margin-top: 15px;
+}
+
+/* ourProductions */ 
+
+.container.Productions {
+    max-width: 1770px;
+}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px 0 0 66px;
+}
+
+.item {
+    width: 100%;
+}
+
+.item-2 {
+    position: absolute;
+    display: contents;
+}
+
+.search {
+    position: relative;
+    top: -52%;
+    left: 36%;
+}
+.iconSearch {
+    transition: 1.2s ease-in-out;
+}
+.iconSearch:hover {
+   transform: scale(1.1); 
+}
+
+/* nominations */
+
+.nomination {
+    margin-top: 150px;
+    background: url(../img/nominationsBg.svg) no-repeat;
+    background-size: auto;
+}
+
+.nomination .wrapper {
+    padding: 126px 95px 55px 190px;
+}
+
+.yearWin h1 {
+    font-size: 72px;
+}
+
+.leftWrapper {
+    margin-top: 67px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.topic {
+    width: 540px;
+    margin-top: 35px;
+}
+
+.topic p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* theaterPartners */
+
+.iconsPartners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+/* footer */
+
+.shellFooter {
+    padding-bottom: 80px;
+    border-bottom: 1px solid #565656;
+}
+ 
+.contactsTels {
+    width: 255px;
+}
+
+
+.formFooter {
+    display: grid;
+    gap: 30px;
+    height: fit-content;
+}
+
+.contactsTels .tel h4 {
+    border-bottom: none;
+    margin-bottom: 25px;
+}
+
+.form {
+    max-width: 180px;
+    padding: 10px 15px;
+    background-color: #444444;
+    border: 1px solid #616161;
+    color: #989898;
+}
+
+.form.message {
+    max-width: 310px;
+    grid-row: 1/3;
+    grid-column: 3/3;
+}
+
+.confidentiality {
+    margin-top: 40px;
+}
+
+.textCon {
+    max-width: 390px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.textCon p, .rights p {
+    font-size: 12px;
+    color: #989898;
+}
+
+.rights {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.submit {
+    display: contents;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed Bold';
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #D1A954;
+    border: none;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    padding: 15px;
+}
+input[type="submit"]:hover {
+    background-color: #d3950f;
+}
+
+
+@media screen and (max-width: 1120px) {
+    .container , .container.Productions{
+        max-width: 692px;
+    }
+    .d-none {
+        display: none;
+    }
+    /* header */
+
+    /* sidebar */
+
+    /* main */
+    .sub-title {
+        padding-bottom: 365px;
+    }
+    /* ourProductions */
+    .container.hidden {
+        overflow: hidden;
+    }
+    .wrapper-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        width: max-content;
+    }
+    /* nominations */
+    .container.nominations {
+        max-width: inherit;
+    }
+    .nomination {
+        margin-top: 75px;
+    }
+    .leftWrapper {
+        margin-left: 60px;
+    }
+    
+    /* theaterPartners */
+
+    /* footer */
+    .wrapper.contactsFooter {
+        flex-direction: column-reverse;
+    }
+    .contactsTels {
+        display: grid;
+        row-gap: 25px;
+        width: 100%;
+        margin-top: 80px;
+    }
+    .contactsTels .tel h4 {
+        margin: 0;
+    }
+    .tel.grid {
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+    .tel.gridEndText {
+        text-align: end;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container.main {
+        width: fit-content;
+    }
+    .title {
+        margin: 90px 0 60px;
+    }
+    /* header */
+    .navigation {
+        display: none;
+    }
+    .tel.d-none {
+        display: block;
+    }
+    /* sideInf/sideBar */
+    #sideInf {
+        display: none;
+    }
+    #sideBar,.sideBar  {
+        display: block;
+    }
+    /* main */
+    .content-wrapper {
+        margin-top: 170px;
+    }
+    .sub-title {
+        padding-bottom: 250px;
+    }
+    /* ourProductions */
+
+    /* nominations */
+    .leftWrapper {
+        margin-left: 30px;
+    }
+    .nomination .wrapper {
+        padding-left: 99px;
+    }
+    .topic {
+        width: auto;
+    }
+    .topic p {
+        font-size: 29px;
+    }
+    /* theaterPartners */
+
+    /* footer */
+
+}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 510px;
+    }
+    /* header */
+    /* sideInf/sideBar */
+    #sideBar {
+        width: 100%;
+        position: fixed;
+    }
+    /* main */
+    .content-wrapper {
+        margin-top: 115px;
+    }
+    .sub-title {
+        padding-bottom: 110px;
+    }
+    .sub-title p {
+        width: auto;
+    }
+    /* aboutTheatre */
+    .about {
+        text-align: center;
+    }
+    .wrapper.about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about p {
+        width: auto;
+    }
+    .title-about {
+        margin-top: 60px;
+    }
+    .adapAbout {
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+    }
+    .armChairs {
+        margin-right: 60px;
+    }
+    /* ourProductions */
+    /* nominations */
+    .nomination {
+        margin-top: 0;
+    }
+    .topic p {
+        font-size: 25px;
+    }
+    .nomination .wrapper {
+        padding: 126px 0px 55px 33px;
+    }
+    /* theaterPartners */
+    /* footer */
+    .formFooter {
+        justify-content: center;
+    }
+    .form.message {
+        max-width: 360px;
+        grid-row: 3/3;
+        grid-column: 1/3;
+    }
+    input[type="submit"] {
+        grid-column: 1/3;
+    }
+}
